@@ -5,7 +5,7 @@ metadata:
   namespace: my-app
   labels:
     owner: platform-repo
-    app.kubernetes.io/instance: helm-app
+    argocd.argoproj.io/instance: helm-app
   annotations:
     # set this with value of OIDC_IAM_ROLE
     eks.amazonaws.com/role-arn: "arn:aws:iam::471112523246:role/my-role"
