@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: my-sa
+  namespace: my-app
+  labels:
+    owner: platform-repo
+  annotations:
+    # set this with value of OIDC_IAM_ROLE
+    eks.amazonaws.com/role-arn: "arn:aws:iam::471112523246:role/my-role"
